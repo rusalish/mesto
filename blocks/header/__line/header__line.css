@@ -1,0 +1,6 @@
+.header__line {
+    border: 1px solid rgba(84, 84, 84, 1);
+    margin: 0;
+    align-items: center;
+    width: 100%;
+}

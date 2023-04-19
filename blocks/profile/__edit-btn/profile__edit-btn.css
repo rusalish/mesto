@@ -1,0 +1,14 @@
+.profile__edit-btn {
+    width: 24px;
+    height: 24px;
+    background-color: transparent rgba(0, 0, 0, 5);
+    background: url(../../../images/Vector.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: opacity .5 ease;
+}
+.profile__edit-btn:hover {
+    opacity: .6;
+}
