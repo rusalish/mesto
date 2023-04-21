@@ -2,6 +2,9 @@
 const popupElement = document.querySelector('.popup');
 const popupOpenButtonElement = document.querySelector('.profile__edit-btn');
 const popupCloseButtonElement = popupElement.querySelector('.popup__close');
+const popupInputElement = document.querySelector('.popup__input')
+
+console.log(popupInputElement)
 
 
 const togglePopupVisibility = function () {
@@ -27,6 +30,11 @@ const closePopupByClickOnOverlay = function (event) {
 
     closePopup();
 }
+function handlePopupEditOpen() {
+
+    openPopup()
+}
+
 popupOpenButtonElement.addEventListener('click', openPopup);
 popupCloseButtonElement.addEventListener('click', closePopup);
 popupElement.addEventListener('click', closePopupByClickOnOverlay)
