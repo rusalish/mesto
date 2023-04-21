@@ -30,11 +30,3 @@ const closePopupByClickOnOverlay = function (event) {
 popupOpenButtonElement.addEventListener('click', openPopup);
 popupCloseButtonElement.addEventListener('click', closePopup);
 popupElement.addEventListener('click', closePopupByClickOnOverlay)
-
-const headerElement = document.querySelector('.header');
-headerElement.addEventListener('click', () => {
-    console.log('HEADER CLICKED');
-}, {
-    once: true,
-    capture: true,
-})
