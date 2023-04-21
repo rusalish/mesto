@@ -9,6 +9,7 @@
     font-size: 18px;
     line-height: 22px;
     transition: opacity .4 linear;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
 .popup__save-btn:hover {
     opacity: .7;
