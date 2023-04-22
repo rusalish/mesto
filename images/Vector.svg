@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 10 10">
+<rect fill="#fdfcfd" fill-opacity="0.996" x="-5.30" y="-0.97" transform="translate(5.57,4.42) rotate(-44.9)" width="10.60" height="1.94" rx="0.73"/>
+<path fill="#fdfcfd" fill-opacity="0.996" d="
+  M 0.94 10.00
+  Q 0.47 10.00 0.00 10.00
+  Q 0.00 9.34 0.00 8.69
+  Q 2.09 8.27 0.94 10.00
+  Z"
+/>
+</svg>

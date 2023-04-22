@@ -4,16 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Путешествие по России</title>
+  <title>Mesto</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body class="body">
   <div class="page">
     <header class="header">
-      <img src="./images/logo.png" alt="логотип сайта Mesto" class="header__logo">
-      <div class="header__line">
-      </div>
+      <img src="./images/logo.svg" alt="логотип сайта Mesto" class="header__logo">
     </header>
     <main class="content">
       <section class="profile">
@@ -31,54 +29,42 @@
           <img src="./images/karachaevsk.jpg" alt='Карачаевск' class="element__image">
           <div class="element__description">
             <h2 class="element__title">Карачаевск</h2>
-            <dev class="element__like-container">
-              <button type="button" class="element__like-btn" title="Мне нравится"></button>
-            </dev>
+            <button type="button" class="element__like-btn" title="Мне нравится"></button>
           </div>
         </div>
         <div class="element">
           <img src="./images/elbrus.jpg" alt='Эльбрус' class="element__image">
           <div class="element__description">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <dev class="element__like-container">
-              <button type="button" class="element__like-btn" title="Мне нравится"></button>
-            </dev>
+            <button type="button" class="element__like-btn" title="Мне нравится"></button>
           </div>
         </div>
         <div class="element">
           <img src="./images/dombay.jpg" alt='Домбай' class="element__image">
           <div class="element__description">
             <h2 class="element__title">Домбай</h2>
-            <dev class="element__like-container">
-              <button type="button" class="element__like-btn" title="Мне нравится"></button>
-            </dev>
+            <button type="button" class="element__like-btn" title="Мне нравится"></button>
           </div>
         </div>
         <div class="element">
           <img src="./images/sulakskiy.jpg" alt='Сулакский каньон' class="element__image">
           <div class="element__description">
             <h2 class="element__title">Сулакский каньон</h2>
-            <dev class="element__like-container">
-              <button type="button" class="element__like-btn" title="Мне нравится"></button>
-            </dev>
+            <button type="button" class="element__like-btn" title="Мне нравится"></button>
           </div>
         </div>
         <div class="element">
           <img src="./images/baikal.jpg" alt='Байкал' class="element__image">
           <div class="element__description">
             <h2 class="element__title">Байкал</h2>
-            <dev class="element__like-container">
-              <button type="button" class="element__like-btn element__like-btn_active" title="Мне нравится"></button>
-            </dev>
+            <button type="button" class="element__like-btn element__like-btn_active" title="Мне нравится"></button>
           </div>
         </div>
         <div class="element">
           <img src="./images/Murmansk.jpg" alt='Мурманск' class="element__image">
           <div class="element__description">
             <h2 class="element__title">Мурманск</h2>
-            <dev class="element__like-container">
-              <button type="button" class="element__like-btn" title="Мне нравится"></button>
-            </dev>
+            <button type="button" class="element__like-btn" title="Мне нравится"></button>
           </div>
         </div>
       </section>
@@ -86,19 +72,18 @@
     <footer class="footer">
       <p class="footer__copyright">© 2023. Аллаяров Рустам</p>
     </footer>
-  </div>
-  <div class="popup">
-    <div class="popup__container">
-      <button type="button" class="popup__close"></button>
-      <div class="popup__content">
-        <h1 class="popup__title">Редактировать профиль</h1>
-        <fieldset class="popup__fieldset">
-          <input class="popup__input" type="text" name="title" placehoder="Имя" minlength="2" maxlength="40" required>
-          <span class="popup__input-error name-error"></span>
-          <input class="popup__input" type="text" name="subtitle" placehoder="О себе" minlength="2" maxlength="200"
-            required>
-        </fieldset>
-        <button class="popup__save-btn" type="submit" title="Сохранить">Сохранить</button>
+    <div class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form name="profile-form">
+          <fieldset class="popup__fieldset">
+            <input class="popup__input popup__input_type_name" type="text" name="title" placeholder="Имя" minlength="2" required>
+            <span class="popup__input-error name-error"></span>
+            <input class="popup__input popup__input_type_occupation" type="text" name="subtitle" placeholder="Профессия" minlength="2" required>
+          </fieldset>
+          <button class="popup__save-btn" type="submit" title="Сохранить">Сохранить</button>
+        </form>
       </div>
     </div>
   </div>

@@ -1,8 +1,9 @@
 .element {
-    border-radius: 3%;
-    max-width: 282px;
-    background-color: #fff;
     overflow: hidden;
+    max-width: 282px;
+    height: 360px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
