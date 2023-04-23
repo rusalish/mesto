@@ -6,25 +6,29 @@ const profileNameElement = document.querySelector('.profile__name');
 const profileOccupationElement = document.querySelector('.profile__occupation');
 const popupInputNameElement = document.querySelector('.popup__input_type_name');
 const popupInputOccupationElement = document.querySelector('.popup__input_type_occupation');
-const popupFormElement = document.querySelector('.profile-form');
 const popupSubmitElement = document.querySelector('.popup__save-btn')
-
-
-const togglePopupVisibility = function () {
-    console.log('togglePopupVisibility');
-    popupElement.classList.toggle('popup_is_opened')
-}
+const popupFormElement = document.querySelector('.popup__container');
 
 const openPopup = function () {
-    console.log('openPopup');
     popupElement.classList.add('popup_is_opened');
     popupInputNameElement.value = profileNameElement.textContent;
     popupInputOccupationElement.value = profileOccupationElement.textContent;
 }
 
 const closePopup = function () {
-    console.log('closePopup');
     popupElement.classList.remove('popup_is_opened');
+}
+
+function handleFormSubmit (event) {
+    event.preventDefault();
+    profileNameElement.textContent = popupInputNameElement.value;
+    profileOccupationElement.textContent = popupInputOccupationElement.value;
+    closePopup();
+}
+
+function oldName () {
+    popupInputNameElement = popupFormElement[0].setAttribute('value', profileNameElement.textContent)
+    popupInputOccupationElement = popupFormElement[1].setAttribute('value', profileOccupationElement.textContent)
 }
 
 const closePopupByClickOnOverlay = function (event) {
@@ -32,6 +36,7 @@ const closePopupByClickOnOverlay = function (event) {
     closePopup();
 }
 
+popupFormElement.addEventListener('submit', handleFormSubmit);
 popupOpenButtonElement.addEventListener('click', openPopup);
 popupCloseButtonElement.addEventListener('click', closePopup);
 popupElement.addEventListener('click', closePopupByClickOnOverlay)
