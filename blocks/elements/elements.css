@@ -3,11 +3,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 282px);
     grid-column-gap: 17px;
-    grid-row-gap: 21px;
+    grid-row-gap: 25px;
     position: relative;
     align-content: space-between;
     max-width: 880px;
     margin-bottom: -5px;
+    z-index: 1;
 }
 @media screen and (max-width: 1279px) {
     .elements {

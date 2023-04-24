@@ -1,4 +1,7 @@
 .element__image {
-    width: 100%;
-    object-fit: cover;
+    width: 282px;
+    height: 282px;
+    object-fit: fixed;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
 }

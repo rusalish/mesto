@@ -10,13 +10,13 @@ const popupSubmitElement = document.querySelector('.popup__save-btn')
 const popupFormElement = document.querySelector('.popup__container');
 
 const openPopup = function () {
-    popupElement.classList.add('popup_is_opened');
+    popupElement.classList.add('popup_opened');
     popupInputNameElement.value = profileNameElement.textContent;
     popupInputOccupationElement.value = profileOccupationElement.textContent;
 }
 
 const closePopup = function () {
-    popupElement.classList.remove('popup_is_opened');
+    popupElement.classList.remove('popup_opened');
 }
 
 function handleFormSubmit (event) {
@@ -26,10 +26,6 @@ function handleFormSubmit (event) {
     closePopup();
 }
 
-function oldName () {
-    popupInputNameElement = popupFormElement[0].setAttribute('value', profileNameElement.textContent)
-    popupInputOccupationElement = popupFormElement[1].setAttribute('value', profileOccupationElement.textContent)
-}
 
 const closePopupByClickOnOverlay = function (event) {
     if (event.target !== event.currentTarget) return;

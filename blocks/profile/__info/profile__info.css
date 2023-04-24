@@ -1,20 +1,21 @@
 .profile__info {
     display: grid;
     align-items: baseline;
-    padding-right: 235px;
     grid-template-columns: 1fr 24px;
     grid-column-gap: 21px;
     grid-row-gap: 5px;
-    padding-top: 5px;
+    padding: 0;
+    padding-right: 239px;
+    margin-top: 5px;
 
 }
 
 @media screen and (max-width: 1279px) {
     .profile__info {
-        padding: 0;
-        padding-top: 22.5px;
+        padding-top: 15px;
+        padding-right: 0;
+        padding-left: 8px;
         grid-row-gap: 3px;
-        grid-column-gap: 21px;
-        
+        grid-column-gap: 11px;
     }
 }
